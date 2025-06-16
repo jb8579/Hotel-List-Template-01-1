@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="robots" content="index, follow">
+		<meta name="language" content="English">
+		
+		<!-- Primary Meta Tags -->
+		<title>Contact Us | AREAMERCHANT</title>
+		<meta name="title" content="Contact Us | AREAMERCHANT">
+		<meta name="description" content="Reach out to AREAMERCHANT for inquiries, bookings, or support regarding our Top 5 Hotels in Las Vegas for 2024. We are here to help make your stay unforgettable.">
+		<meta name="keywords" content="Contact Las Vegas Hotels, Support, Customer Service, Booking Help, Hotel Inquiry, AREAMERCHANT Contact Page">
+		<meta name="author" content="areamerchant">
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://areamerchant.co/contact">
+		<meta property="og:title" content="Contact Us | AREAMERCHANT">
+		<meta property="og:description" content="Get in touch with AREAMERCHANT for any questions or assistance. We’re committed to helping you plan your perfect Las Vegas getaway.">
+		<meta property="og:image" content="https://areamerchant.co/images/contact-og-banner.jpg">
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:url" content="https://areamerchant.co/contact">
+		<meta name="twitter:title" content="Contact Us | AREAMERCHANT">
+		<meta name="twitter:description" content="Need help with bookings or inquiries? Reach out to AREAMERCHANT and we’ll assist you with your Las Vegas hotel needs.">
+		<meta name="twitter:image" content="https://areamerchant.co/images/contact-twitter-banner.jpg">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/fav-icon-2.png" type="image/x-icon">
+		
+		<!-- Custom Stylesheets -->
+		<link rel="stylesheet" href="css/contact.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+	  </head>
+	  
+	<body>
+		<section>
+			<div class="container">
+				<div class="contactInfo">
+					<div>
+						<h2>Contact Info</h2>
+						<ul class="info">
+						
+							<li>
+								<span><img src="images/download (9).png"></span>
+								<span>3850 S LV Blvd, Las Vegas, <br>
+								NV 89109, USA</span>
+							</li>
+						
+							<li>
+								<span><img src="images/download.png"></span>
+								<span>info@areamerchant.com</span>
+							</li>
+						
+							<li>
+								<span><img src="images/download (1).png"></span>
+								<span>888 618 9285</span>
+							</li>
+						
+						</ul>
+					</div>
+					
+					<div>
+						<ul class="sci">
+							<li><a href="#"><img src="images/download (2).png"></li>
+							<li><a href="#"><img src="images/download (4).png"></li>
+							<li><a href="#"><img src="images/download (3).png"></li>
+							<li><a href="#"><img src="images/download (8).png"></li>
+							<li><a href="#"><img src="images/download (7).png"></li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="contactForm">
+					<h2>Send a Message</h2>
+					<div class="formBox">
+						<div class="inputBox w50">
+							<input type="text" id="firstName" required>
+							<span>First Name</span>
+						</div>
+						<div class="inputBox w50">
+							<input type="text" id="lastName" required>
+							<span>Last Name</span>
+						</div>
+						<div class="inputBox w50">
+							<input type="email" id="email" required>
+							<span>Email Address</span>
+						</div>
+						<div class="inputBox w50">
+							<input type="tel" id="mobile" required>
+							<span>Mobile Number</span>
+						</div>
+						<div class="inputBox w100">
+							<textarea id="message" required></textarea>
+							<span>Write your message here...</span>
+						</div>
+						<div class="inputBox w100">
+							<input type="submit" id="submitButton" value="Send" disabled>
+						</div>
+					</div>
+					
+					<script>
+						// Select all input fields and submit button
+						const inputs = document.querySelectorAll('input, textarea');
+						const submitButton = document.getElementById('submitButton');
+					
+						// Function to check if all fields are filled
+						function checkFormCompletion() {
+							let isFormValid = true;
+					
+							inputs.forEach(input => {
+								if (input.value.trim() === '') {
+									isFormValid = false;
+								}
+							});
+					
+							// Enable/Disable the submit button based on form validity
+							submitButton.disabled = !isFormValid;
+						}
+					
+						// Add event listeners to each input field to trigger form validation
+						inputs.forEach(input => {
+							input.addEventListener('input', checkFormCompletion);
+						});
+					
+						// Handle form submission
+						submitButton.addEventListener('click', function(event) {
+							event.preventDefault(); // Prevent form from submitting traditionally
+					
+							// Redirect to home page after successful submission
+							window.location.href = 'index.html'; // Redirect to home page
+						});
+					</script>
+					
+				</div>
+			</div>	
+		</section>	
+	</body>
+</html>
